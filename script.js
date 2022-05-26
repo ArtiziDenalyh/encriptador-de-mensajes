@@ -7,8 +7,14 @@ var btn=document.getElementById("hacer");
 let inputValue="";
 let inputvalueLength=0;
 
+/**
+ * The function ABCD() is called when the button is clicked
+ */
 function pulsar(){
  ABCD();}
+/**
+ * It takes a string and returns an array of the alphabetical index of each letter in the string
+ */
 function ABCD(){
     texto=cadenadetexto.value.toLowerCase();
     inputvalueLength=cadenadetexto.value.length;
@@ -36,6 +42,9 @@ function ABCD(){
         }
     }
 }
+/**
+ * It takes the value of the input field, and if it's not empty, it adds it to the list of messages
+ */
 function limpiar(){
     tablaMensaje.innerHTML="";
 }
